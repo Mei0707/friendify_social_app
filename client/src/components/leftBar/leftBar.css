@@ -1,0 +1,80 @@
+.theme-light {
+  --textColor: #000;
+  --bg: #FEF9F2;
+  --logo: #789DBC;
+  --bgSoft: #f6f3f3;
+  --textColorSoft: #555;
+  --border: lightgray;
+}
+
+.leftBar {
+  flex: 2;
+  position: sticky;
+  top: 70px;
+  height: calc(100vh - 70px);
+  overflow: scroll;
+  background-color: var(--bg);  
+  color: var(--textColor); } 
+
+  /* Media query for mobile (screen size <= 480px) */
+  /* {@media (max-width: 480px) {
+    display: none;
+  }  } */
+
+  /* Hide the scrollbar */
+  /* &::-webkit-scrollbar {
+    display: none;
+  } */
+
+  .container {
+    padding: 20px;
+  }
+
+  .container hr {
+    margin: 20px 0px;
+    border: none;
+    height: 0.5px;
+    background-color: var(--border);  /* Use theme variable */
+  }
+
+  .container .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .container .menu span {
+    font-size: 12px;
+  }
+
+  .container .menu .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .container .menu .user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .container .menu .user span {
+    font-size: 14px;
+  }
+
+  .container .menu .item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .container .menu .item img {
+    width: 30px;
+  }
+
+  .container .menu .item span {
+    font-size: 14px;
+  }
+

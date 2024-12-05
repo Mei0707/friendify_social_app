@@ -1,0 +1,16 @@
+.home {
+  padding: 20px 70px;
+  background-color: var(--bgSoft); /* Assuming you manage themes via CSS variables */
+}
+
+@media (max-width: 768px) /* Adjust for mobile */ {
+  .home {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) /* Adjust for tablet */ {
+  .home {
+    padding: 20px;
+  }
+}

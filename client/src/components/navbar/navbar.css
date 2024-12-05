@@ -1,0 +1,124 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: 50px;
+  border-bottom: 1px solid var(--border);
+  /* Assuming theme variables */
+  position: sticky;
+  top: 0;
+  background-color: #FEF9F2;
+  /* Themed background color */
+  color: var(--textColor);
+  /* Themed text color */
+  z-index: 999;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.left span {
+  font-weight: bold;
+  font-size: 20px;
+  color: #789DBC;
+  /* Themed logo color */
+}
+
+.left .search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--border);
+  /* Themed border color */
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.left .search input {
+  border: none;
+  width: 500px;
+  background-color: transparent;
+  color: var(--textColor);
+  /* Themed text color */
+}
+
+.left .search button {
+  border: none;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+  background-color: #526E48;
+  border-radius: 3px;
+}
+/* For mobile */
+@media (max-width: 768px) {
+  .left .search input {
+    display: none;
+  }
+}
+
+/* For tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .left .search input {
+    width: 200px;
+  }
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* For mobile */
+@media (max-width: 768px) {
+  .right {
+    display: none;
+  }
+}
+
+.right .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+/* For tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .right .user {
+    display: none;
+  }
+}
+
+.right .user img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user img {
+  cursor: pointer;
+  transition: transform 0.2s ease, border 0.2s ease;
+}
+
+.user img:hover {
+  transform: scale(1.1); 
+  border: 2px solid #789DBC; 
+}
+
+.hoverable-icon {
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.hoverable-icon:hover {
+  transform: scale(1.1); 
+  color: #789DBC; 
+}
